@@ -12,6 +12,13 @@
         var inputElm = iframeObjc.contents().find('#input_40_country');
 
         inputElm.empty();
+        console.log(inputElm);
+        const iframe = document.getElementById('210272074821346');
+        console.log(iframe);
+        const iframeDocs =
+          iframe.contentDocument || iframe.contentWindow.document;
+        const iframeElement = iframeDocs.querySelector('#input_40_country');
+        console.log('iframe ele', iframeElement);
       });
     });
   });
